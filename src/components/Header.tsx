@@ -22,13 +22,13 @@ const MainHeaderText = ({ value, bold }: { value: string; bold?: boolean }) => {
 
 export function Header() {
   return (
-    <div>
+    <div className="sticky top-0 z-10">
       <div className="bg-amber-300 flex flex-row p-3 gap-2 justify-end items-center">
         <HeaderText value="PORTAL DO CLIENTE" />
         <HeaderText value="PROTEÇÃO DE DADOS" />
         <HeaderText value="icons" />
       </div>
-      <div className="flex flex-row px-3 py-2 justify-between items-center">
+      <div className="flex bg-white flex-row px-3 py-2 justify-between items-center">
         <div className="flex flex-row gap-4 items-center">
           <Image src="/acqio.svg" alt="Acqio" width={90} height={90}></Image>
           <MainHeaderText value="SOBRE A ACQIO" />
