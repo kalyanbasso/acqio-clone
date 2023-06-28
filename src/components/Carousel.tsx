@@ -2,7 +2,7 @@ import { Carousel } from "../utils/material";
 import Image from "next/image";
 
 const Item = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="h-full w-full">
+  <div className="h-screen w-full">
     <Image
       src={src}
       alt={alt}
